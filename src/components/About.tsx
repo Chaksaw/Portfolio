@@ -46,7 +46,7 @@ const About: React.FC = () => {
               <div className="stat-label">Years Experience</div>
             </div>
             <div className="stat-item">
-              <div className="stat-number">50+</div>
+              <div className="stat-number">30+</div>
               <div className="stat-label">Projects Completed</div>
             </div>
             <div className="stat-item">
@@ -54,7 +54,7 @@ const About: React.FC = () => {
               <div className="stat-label">Client Satisfaction</div>
             </div>
             <div className="stat-item">
-              <div className="stat-number">Great</div>
+              <div className="stat-number">Awesome</div>
               <div className="stat-label">Support Available</div>
             </div>
           </div>

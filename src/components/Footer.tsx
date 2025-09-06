@@ -29,23 +29,20 @@ const Footer: React.FC = () => {
           <div className="footer-section">
             <h4>Contact Info</h4>
             <ul>
-              <li>📧 your.email@example.com</li>
-              <li>📱 +1 (555) 123-4567</li>
-              <li>📍 Your City, Country</li>
+              <li>📧chakoursawadogo63@gmail.com</li>
+              <li>📱 +1 (506) 232 9022</li>
+              <li>📍 Moncton, NB, Canada</li>
             </ul>
           </div>
           
           <div className="footer-section">
             <h4>Follow Me</h4>
             <div className="social-links">
-              <a href="#" className="social-link" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/chakour-sawadogo-ba3218245" className="social-link" target="_blank" rel="noopener noreferrer">
                 <span>💼</span>
               </a>
-              <a href="#" className="social-link" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/Chaksaw" className="social-link" target="_blank" rel="noopener noreferrer">
                 <span>🐙</span>
-              </a>
-              <a href="#" className="social-link" target="_blank" rel="noopener noreferrer">
-                <span>🐦</span>
               </a>
             </div>
           </div>
@@ -53,8 +50,8 @@ const Footer: React.FC = () => {
         
         <div className="footer-bottom">
           <div className="footer-line"></div>
-          <p>&copy; {currentYear} Your Name. All rights reserved.</p>
-          <p>Made with ❤️ using React & TypeScript</p>
+          <p>&copy; {currentYear} Chakour Sawadogo. All rights reserved.</p>
+          <p>Made with passion❤️ using React & TypeScript</p>
         </div>
       </div>
     </footer>

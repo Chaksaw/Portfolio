@@ -8,7 +8,7 @@ const Hero: React.FC = () => {
         <div className="hero-content">
           <div className="hero-text">
             <h1 className="hero-title">
-              Hi, I'm <span className="highlight">Your Name</span>
+              Hi, I'm <span className="highlight">Chakour</span>
             </h1>
             <h2 className="hero-subtitle">
               Full Stack Developer & Designer

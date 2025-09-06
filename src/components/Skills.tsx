@@ -20,7 +20,16 @@ const Skills: React.FC = () => {
         { name: "Express.js", level: 80, icon: "🚀" },
         { name: "Python", level: 75, icon: "🐍" },
         { name: "SQL", level: 80, icon: "🗄️" },
-        { name: "MongoDB", level: 75, icon: "🍃" }
+        { name: "MongoDB", level: 75, icon: "🍃" },
+        { name: "Django", level: 70, icon: "🌿" },
+        { name: "PHP", level: 85, icon: "🐘" },
+        { name: "Laravel", level: 90, icon: "🕸️" },
+        { name: "RESTful APIs", level: 85, icon: "🔗" },
+        { name: "C++", level: 100, icon: "⚙️" },
+        { name: "C#", level: 90, icon: "♯" },
+        { name: "Java", level: 90, icon: "☕" },
+        { name: "Ruby", level: 90, icon: "💎" },
+        { name: "COBOL", level: 90, icon: "🏦" }
       ]
     },
     {

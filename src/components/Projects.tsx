@@ -11,9 +11,9 @@ const Projects: React.FC = () => {
       description: "A full-stack e-commerce application built with React, Node.js, and MongoDB. Features include user authentication, product management, shopping cart, and payment integration.",
       image: "🛒",
       category: "fullstack",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-      liveUrl: "#",
-      githubUrl: "#",
+      technologies: ["JavaScript", "CSS", "Waze", "Shopping API", "Bootstrap", "HTML5"],
+      liveUrl: "https://chaksaw.github.io/web_project_bootstrap/",
+      githubUrl: "https://github.com/Chaksaw/web_project_bootstrap",
       featured: true
     },
     {
@@ -23,8 +23,7 @@ const Projects: React.FC = () => {
       image: "📋",
       category: "frontend",
       technologies: ["React", "TypeScript", "Firebase", "Tailwind CSS"],
-      liveUrl: "#",
-      githubUrl: "#",
+      githubUrl: "https://github.com/Chaksaw/task_managment_app",
       featured: true
     },
     {
@@ -33,9 +32,9 @@ const Projects: React.FC = () => {
       description: "A weather application that displays current weather conditions and forecasts using OpenWeatherMap API with beautiful visualizations.",
       image: "🌤️",
       category: "frontend",
-      technologies: ["React", "JavaScript", "CSS3", "Weather API"],
-      liveUrl: "#",
-      githubUrl: "#",
+      technologies: ["JavaScript", "CSS3", "Weather API"],
+      liveUrl: "https://chaksaw.github.io/Live-weather-app/",
+      githubUrl: "https://github.com/Chaksaw/Live-weather-app",
       featured: false
     },
     {
@@ -45,8 +44,7 @@ const Projects: React.FC = () => {
       image: "✍️",
       category: "fullstack",
       technologies: ["Next.js", "Prisma", "PostgreSQL", "NextAuth"],
-      liveUrl: "#",
-      githubUrl: "#",
+      githubUrl: "https://github.com/Chaksaw/blog_platform",
       featured: false
     },
     {
@@ -56,8 +54,8 @@ const Projects: React.FC = () => {
       image: "🎨",
       category: "frontend",
       technologies: ["React", "TypeScript", "CSS3", "Framer Motion"],
-      liveUrl: "#",
-      githubUrl: "#",
+      liveUrl: "https://chaksaw.github.io/Portfolio/",
+      githubUrl: "https://github.com/Chaksaw/Portfolio",
       featured: false
     },
     {
@@ -67,9 +65,18 @@ const Projects: React.FC = () => {
       image: "🚪",
       category: "backend",
       technologies: ["Node.js", "Express", "Redis", "JWT"],
-      liveUrl: "#",
-      githubUrl: "#",
+      githubUrl: "https://github.com/Chaksaw/api_project/tree/main",
       featured: false
+    },
+    {
+      id: 7,
+      title: "musical creativity app",
+      description: "A web application that allows users to create music projects and get evaluated by experts. This project was made in collaboration with researchers from the University of Moncton. Use the following code to access the app.                    code: 3652-3-51",
+      image: "🎶",
+      category: "fullstack",
+      technologies: ["HTML", "CSS", "phpmyadmin", "sql", "JavaScript", "PHP"],
+      liveUrl: "https://educreative.ca/CTS/participant/AccueilParticipant.html",
+      featured: true
     }
   ];
 
@@ -80,8 +87,8 @@ const Projects: React.FC = () => {
     { key: 'fullstack', label: 'Full Stack' }
   ];
 
-  const filteredProjects = activeFilter === 'all' 
-    ? projects 
+  const filteredProjects = activeFilter === 'all'
+    ? projects
     : projects.filter(project => project.category === activeFilter);
 
   return (
@@ -91,7 +98,7 @@ const Projects: React.FC = () => {
         <p className="section-subtitle">
           Here are some of the projects I've worked on recently
         </p>
-        
+
         <div className="project-filters">
           {filters.map((filter) => (
             <button
@@ -103,7 +110,7 @@ const Projects: React.FC = () => {
             </button>
           ))}
         </div>
-        
+
         <div className="projects-grid">
           {filteredProjects.map((project) => (
             <div key={project.id} className={`project-card ${project.featured ? 'featured' : ''}`}>
@@ -111,30 +118,34 @@ const Projects: React.FC = () => {
                 <span className="project-emoji">{project.image}</span>
                 {project.featured && <span className="featured-badge">Featured</span>}
               </div>
-              
+
               <div className="project-content">
                 <h3 className="project-title">{project.title}</h3>
                 <p className="project-description">{project.description}</p>
-                
+
                 <div className="project-technologies">
                   {project.technologies.map((tech, index) => (
                     <span key={index} className="tech-tag">{tech}</span>
                   ))}
                 </div>
-                
+
                 <div className="project-links">
-                  <a href={project.liveUrl} className="project-link" target="_blank" rel="noopener noreferrer">
-                    Live Demo
-                  </a>
-                  <a href={project.githubUrl} className="project-link" target="_blank" rel="noopener noreferrer">
-                    View Code
-                  </a>
+                  {project.liveUrl && (
+                    <a href={project.liveUrl} className="project-link" target="_blank" rel="noopener noreferrer">
+                      Live Demo
+                    </a>
+                  )}
+                  {project.githubUrl && (
+                    <a href={project.githubUrl} className="project-link" target="_blank" rel="noopener noreferrer">
+                      View Code
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
           ))}
         </div>
-        
+
         <div className="projects-cta">
           <p>Interested in working together?</p>
           <button className="btn" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
